@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { serverOnlyFetch } from "./server-only-fetch";
 import { ClientComponent } from "./client";
 
+export const dynamic = "force-dynamic";
 export default async function Home() {
   const promise = serverOnlyFetch();
 
